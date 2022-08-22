@@ -1,0 +1,89 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: antiquewhite;
+  width: 50vw;
+  height: 100vh;
+}
+.container-svg {
+  width: 50vw;
+  height: 100vh;
+}
+.container-svg__square {
+  fill: rgb(247, 247, 5);
+  stroke: rgb(255, 0, 0);
+  stroke-width: 5px;
+}
+.container-svg__rectangle {
+  fill: rgb(4, 4, 252);
+  stroke: rgb(128, 128, 128);
+  stroke-width: 5px;
+}
+.container-svg__circle {
+  fill: rgb(83, 187, 75);
+  stroke: rgb(207, 55, 169);
+  stroke-width: 5px;
+}
+.container-svg__ellipse {
+  fill: rgb(49, 156, 210);
+  stroke: rgb(187, 207, 55);
+  stroke-width: 5px;
+}
+
+.space {
+  background-color: #414A4C;
+  width: 50vw;
+  height: 100vh;
+}
+.space-svg {
+  width: 50vw;
+  height: 100vh;
+}
+.space-svg__star {
+  fill: rgb(187, 118, 75);
+  stroke: rgb(162, 228, 228);
+  stroke-width: 5px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation: 2s linear 1s infinite alternate blink;
+          animation: 2s linear 1s infinite alternate blink;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    fill: rgb(187, 118, 75);
+    stroke: rgb(162, 228, 228);
+  }
+  100% {
+    fill: rgb(116, 26, 149);
+    stroke: rgb(74, 203, 57);
+  }
+}
+
+@keyframes blink {
+  0% {
+    fill: rgb(187, 118, 75);
+    stroke: rgb(162, 228, 228);
+  }
+  100% {
+    fill: rgb(116, 26, 149);
+    stroke: rgb(74, 203, 57);
+  }
+}

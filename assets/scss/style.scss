@@ -1,0 +1,80 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: antiquewhite;
+  width: 50vw;
+  height: 100vh;
+
+  &-svg {
+    width: 50vw;
+    height: 100vh;
+
+    &__square {
+      fill: rgb(247, 247, 5);
+      stroke: rgb(255, 0, 0);
+      stroke-width: 5px;
+    }
+
+    &__rectangle {
+      fill: rgb(4, 4, 252);
+      stroke: rgb(128, 128, 128);
+      stroke-width: 5px;
+    }
+
+    &__circle {
+      fill: rgb(83, 187, 75);
+      stroke: rgb(207, 55, 169);
+      stroke-width: 5px;
+    }
+
+    &__ellipse {
+      fill: rgb(49, 156, 210);
+      stroke: rgb(187, 207, 55);
+      stroke-width: 5px;
+    }
+  }
+}
+
+.space {
+  background-color: #414A4C;
+  width: 50vw;
+  height: 100vh;
+
+  &-svg {
+    width: 50vw;
+    height: 100vh;
+
+    &__star {
+      fill: rgb(187, 118, 75);
+      stroke: rgb(162, 228, 228);
+      stroke-width: 5px;
+      animation-duration: 3s;
+      animation: 2s linear 1s infinite alternate blink;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    fill: rgb(187, 118, 75);
+    stroke: rgb(162, 228, 228);
+  }
+
+  100% {
+    fill: rgb(116, 26, 149);
+    stroke: rgb(74, 203, 57);
+  }
+}
